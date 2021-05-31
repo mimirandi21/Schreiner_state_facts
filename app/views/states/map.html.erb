@@ -1,10 +1,11 @@
 
-<%# <%= thisone = `.../assets/US_states.geojson`%> 
+
 <div id="mapid">
 
 
 
 </div>
+<div class="stateinfo">hi</div>
 
 <%# <script>
 L.tileLayer('../assets/US_states.geojson', {
@@ -16,13 +17,10 @@ L.tileLayer('../assets/US_states.geojson', {
 }).addTo(map)
 </script> %>
 <script>
-    const mymap = L.map('mapid').setView([51.505, -0.09], 13)
-    // mymap.buildMap('../assets/US_states.geojson')
-    L.markerLayer.loadURL('https://github.com/mimirandi21/Schreiner_state_facts/blob/master/app/assets/US_states.geojson', {
-    attribution: 'as provided',
-    maxZoom: 18,
-    id: 'US_states',
-    tileSize: 512,
-    zoomOffset: -1,
-    }).addTo(mymap)
+    const mymap = L.map('mapid').setView([37.0902, -95.7129], 4)
+    
+    const attribution =  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    const tileURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const tiles = L.tileLayer(tileURL, {attribution})
+    tiles.addTo(mymap)
 </script>
