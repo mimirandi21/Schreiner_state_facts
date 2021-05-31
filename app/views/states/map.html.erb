@@ -2,8 +2,27 @@
 <%# <%= thisone = `.../assets/US_states.geojson`%> 
 <div id="mapid">
 
-<%= map(:center => {
-    :latlng => [51.52238797921441, -0.083662356653559283],
-    :zoom => 18
-}) %>
+
+
 </div>
+
+<%# <script>
+L.tileLayer('../assets/US_states.geojson', {
+    attribution: 'as provided',
+    maxZoom: 18,
+    id: 'US_states',
+    tileSize: 512,
+    zoomOffset: -1,
+}).addTo(map)
+</script> %>
+<script>
+    const mymap = L.map('mapid').setView([51.505, -0.09], 13)
+    // mymap.buildMap('../assets/US_states.geojson')
+    L.markerLayer.loadURL('https://github.com/mimirandi21/Schreiner_state_facts/tree/master/assets/US_states.geojson', {
+    attribution: 'as provided',
+    maxZoom: 18,
+    id: 'US_states',
+    tileSize: 512,
+    zoomOffset: -1,
+    }).addTo(mymap)
+</script>
