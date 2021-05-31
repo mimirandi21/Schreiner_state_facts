@@ -1,7 +1,7 @@
 class StatesController < ApplicationController
 
     def show
-        render :layout => 'home';
+        render state_path;
     end
 
     def index

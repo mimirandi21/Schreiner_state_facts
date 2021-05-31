@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :states, only: [:index, :show];
   resources :facts, only: [:index, :show];
 
-  root 'states#home'
+  root 'states#map'
 end
