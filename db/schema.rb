@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(version: 2021_05_30_201914) do
     t.text "details"
     t.float "lat"
     t.float "lng"
+    t.bigint "state_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["state_id"], name: "index_facts_on_state_id"
   end
 
   create_table "states", force: :cascade do |t|
@@ -34,4 +36,5 @@ ActiveRecord::Schema.define(version: 2021_05_30_201914) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "facts", "states"
 end

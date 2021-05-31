@@ -5,6 +5,7 @@ class CreateFacts < ActiveRecord::Migration[6.1]
       t.text :details
       t.float :lat
       t.float :lng
+      t.references :state, null: false, foreign_key: true
 
       t.timestamps
     end
