@@ -28,6 +28,15 @@ body {
 	color: whitesmoke;
 }
 
+a {
+	font-size: 15px;
+	color: black;
+}
+
+a.currentpage {
+	color: blue;
+}
+
 header {
 	background-color: darkgrey;
 	height: 10%;
@@ -42,6 +51,14 @@ header h1 {
 	margin: 0;
 }
 
+h5 {
+	margin: 0;
+	font-size: 12px;
+}
+p {
+	font-size: 15px;
+}
+
 #mapid {
 	height: 60%;
 	width: 75%;
@@ -51,4 +68,5 @@ header h1 {
 	width: 25%;
 	height: 60%;
 	background-color: darkgrey;
+	overflow: auto;
 }

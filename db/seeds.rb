@@ -9,7 +9,7 @@
 @colorado = State.create({
     name: 'Colorado',
     description: 'Colorado, a western U.S. state, has a diverse landscape of arid desert, river canyons and snow-covered Rocky Mountains, which are partly protected by Rocky Mountain National Park. Elsewhere, Mesa Verde National Park features Ancestral Puebloan cliff dwelings.  Perched a mile above sea level, Denver, Colorado\'s capital and largest city, features a vibrant downtown area. -Google',
-    flag_image: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg',
+    flag_image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colorado_designed_by_Andrew_Carlisle_Carson.svg',
     capitol_name: 'Denver',
     population: 5773714
 })
@@ -49,7 +49,7 @@ co_fact4 = Fact.create({
 @minnesota = State.create({
     name: 'Minnesota',
     description: 'Minnesota is a midwestern U.S. state bordering Canada and Lake Superior, the largest of the Great Lakes.  The state contains more that 10,000 other lakes, including Lake Itasca, the Mississippi River\'s primary source.  The "Twin Cities" of Minneapolis and state capital Saint Paul are dense with cultural landmarks like the Science Museum of Minnesota and the Walker Art Center, a modern art museum. -Google',
-    flag_image: 'https://en.wikipedia.org/wiki/Flag_of_Minnesota#/media/File:Flag_of_Minnesota.svg',
+    flag_image: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Minnesota.svg',
     capitol_name: 'Saint Paul',
     population: 5709752
 })

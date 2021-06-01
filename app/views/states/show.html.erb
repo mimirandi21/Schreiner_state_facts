@@ -1,17 +1,22 @@
-<%= render 'map' %>
+<%= render 'partials/map' %>
 
 <div class="stateinfo">
     
 
-    <img src='<%= @state.flag_image %>'>
+    <img src=<%= @state.flag_image %> height="100px">
     <h2><%= @state.name %></h2>
-    </br>
     <p><%= @state.description %></p>
+    <h5>State Capitol: <%= @state.capitol_name %></h5>
+    <h5>State Population: <%= @state.population %></h5>
     </br>
-    <h4>State Capitol: <%= @state.capitol_name %></h4>
-    <h4>State Population: <%= @state.population %></h4>
-    </br>
-    <h4>Fun Facts (click to reveal location on map)</h4>
+    <h5>Fun Facts (click to reveal location on map)</h5>
+    <% @facts.each do |fact| %>
+        <%= link_to fact.title, fact_path(fact) %>
+    <% end %>
     </br>
     
 </div>
+
+<script>
+    
+</script>

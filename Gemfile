@@ -7,7 +7,6 @@ gem 'rails', '~> 6.1', '>= 6.1.3.2'
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'puma', '~> 5.3', '>= 5.3.1'
 gem 'puma-daemon', '~> 0.1.2', require: false
-
 gem 'awesome_print', '~> 1.8'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
@@ -24,6 +23,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 4.0.1'
   gem 'shoulda-matchers', '~> 4.2'
+  gem 'pry'
 end
 
 group :development do

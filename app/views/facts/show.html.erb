@@ -1,0 +1,26 @@
+<%= render 'partials/map'%>
+
+
+<div class="stateinfo">
+    
+
+    <img src=<%= @state.flag_image %> height="100px">
+    <h2><%= @state.name %></h2>
+    <p><%= @state.description %></p>
+    <h5>State Capitol: <%= @state.capitol_name %></h5>
+    <h5>State Population: <%= @state.population %></h5>
+    </br>
+    <h5>Fun Facts (click to reveal location on map)</h5>
+    <% @state.facts.each do |fact| %>
+        <%= link_to fact.title, fact_path(fact) %>
+        </br>
+        </br>
+    <% end %>
+    </br>
+    
+</div>
+
+<script>
+    var marker = L.marker([<%= @fact.lat %>, <%= @fact.lng %>]).addTo(mymap);
+    marker.bindPopup("<%= @fact.details %>").openPopup();
+</script>
