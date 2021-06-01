@@ -1,9 +1,14 @@
 <%= render 'partials/map'%>
 
 <div class="stateinfo">
-    <select onchange="window.location=this.value">
+    <label for="states">States: </label>
+    <select name="states" onchange="window.location=this.value">
+        <option value="" selected>Select</option>
     <% @states.each do |state| %>
         <option value="states/<%= state.id %>"><%= state.name %></option>
     <% end %>
     </select>
+
+    
+
 </div>

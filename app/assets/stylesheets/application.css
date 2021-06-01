@@ -43,26 +43,49 @@ header {
 	height: 10%;
 	width: 100%;
 	color: black;
+	display: inline-block;
 }
 
-header h1 {
-	font-size: 40px;
+h1 {
+	font-size: 7vh;
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	padding: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
 	margin: 0;
 }
 
 h2 {
 	text-align: center;
 }
+
+h3 {
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+}
+
 h5 {
 	margin: 0;
 	font-size: 12px;
 	text-align: center;
 }
+
+img.flag {
+	padding-left: 10px;
+}
+
 p {
 	font-size: 15px;
 	padding: 5px;
+}
+
+select {
+	width: 100px;
+	height: 70px;
+}
+
+textarea {
+	height: 70px;
 }
 
 #mapid {

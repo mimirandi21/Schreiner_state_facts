@@ -1,15 +1,26 @@
 <%= render 'partials/map' %>
 
 <div class="stateinfo">
+<label for="states">States: </label>
+    <select name="states" onchange="window.location=this.value">
+        <option value="" selected>Select</option>
+    <% @states.each do |state| %>
+        <option value="<%= state.id %>"><%= state.name %></option>
+    <% end %>
+    </select>
+    </br>
+    </br>
     
 
-    <img src=<%= @state.flag_image %> height="100px">
+<div class="flagNameDiv">
+    <img class="flag" src=<%= @state.flag_image %> height="100px">
     <h2><%= @state.name %></h2>
+    </div>
     <p><%= @state.description %></p>
     <h5>State Capitol: <%= @state.capitol_name %></h5>
     <h5>State Population: <%= @state.population %></h5>
     </br>
-    <h5>Fun Facts (click to reveal location on map)</h5>
+    <h3>Fun Facts (click to reveal location on map)</h3>
     <% @facts.each do |fact| %>
         <%= link_to fact.title, fact_path(fact) %>
         </br>
