@@ -31,6 +31,7 @@ body {
 a {
 	font-size: 15px;
 	color: black;
+	padding: 5px;
 }
 
 a.currentpage {
@@ -51,21 +52,26 @@ header h1 {
 	margin: 0;
 }
 
+h2 {
+	text-align: center;
+}
 h5 {
 	margin: 0;
 	font-size: 12px;
+	text-align: center;
 }
 p {
 	font-size: 15px;
+	padding: 5px;
 }
 
 #mapid {
 	height: 60%;
-	width: 75%;
+	width: 70%;
 }
 
 .stateinfo {
-	width: 25%;
+	width: 30%;
 	height: 60%;
 	background-color: darkgrey;
 	overflow: auto;
