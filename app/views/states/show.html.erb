@@ -31,5 +31,10 @@
 </div>
 
 <script>
+    if("<%= @state.name %>" == "Minnesota") {
+        mymap.setView([46.2773, -94.265469], 6, {animation: true})
+    } else {
+        mymap.setView([39, -105.484862], 7, {animation: true})
+    }
     
 </script>

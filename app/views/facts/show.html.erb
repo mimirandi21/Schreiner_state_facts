@@ -13,8 +13,10 @@
     </br>
     
 
-    <img class="flag" src=<%= @state.flag_image %> height="100px">
-    <h2><%= @state.name %></h2>
+    <<div class="flagNameDiv">
+        <img class="flag" src=<%= @state.flag_image %> height="100px">
+        <h2><%= @state.name %></h2>
+    </div>
     <p><%= @state.description %></p>
     <h5>State Capitol: <%= @state.capitol_name %></h5>
     <h5>State Population: <%= @state.population %></h5>
@@ -31,10 +33,17 @@
 
 <script>
     var marker = L.marker([<%= @fact.lat %>, <%= @fact.lng %>]).addTo(mymap);
-    marker.bindPopup("<%= @fact.details %>").openPopup();
+    var popup = marker.bindPopup('<b><%= @fact.details %></b>')
+    popup.openPopup();
 
     function changeState(value) {
         window.location = "/states/" + value
+    }
+
+    if("<%= @state.name %>" == "Minnesota") {
+        mymap.setView([46.2773, -94.265469], 6, {animation: false})
+    } else {
+        mymap.setView([39, -105.484862], 7, {animation: false})
     }
 
 </script>

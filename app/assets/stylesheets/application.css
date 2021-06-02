@@ -55,7 +55,8 @@ h1 {
 }
 
 h2 {
-	text-align: center;
+	padding-left: 10px;
+	color: black;
 }
 
 h3 {
@@ -93,6 +94,12 @@ textarea {
 	width: 70%;
 }
 
+.flagNameDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
 .stateinfo {
 	width: 30%;
 	height: 60%;
