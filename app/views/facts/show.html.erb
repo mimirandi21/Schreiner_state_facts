@@ -3,17 +3,20 @@
 
 <div class="stateinfo">
 <label for="states">States: </label>
+<div class="selectionBox">
+    
     <select name="states" onchange="changeState(this.value)">
-    <option value="" selected>Select</option>
-    <% @states.each do |state| %>
-        <option value="<%= state.id %>"><%= state.name %></option>
-    <% end %>
+        <option value="" selected>Select</option>
+        <% @states.each do |state| %>
+            <option value="<%= state.id %>"><%= state.name %></option>
+        <% end %>
     </select>
+</div>
     </br>
-    </br>
+
     
 
-    <<div class="flagNameDiv">
+    <div class="flagNameDiv">
         <img class="flag" src=<%= @state.flag_image %> height="100px">
         <h2><%= @state.name %></h2>
     </div>
@@ -27,7 +30,7 @@
         </br>
         </br>
     <% end %>
-    </br>
+   
     
 </div>
 

@@ -2,14 +2,16 @@
 
 <div class="stateinfo">
 <label for="states">States: </label>
+<div class="selectionBox">
     <select name="states" onchange="window.location=this.value">
         <option value="" selected>Select</option>
     <% @states.each do |state| %>
         <option value="<%= state.id %>"><%= state.name %></option>
     <% end %>
     </select>
+    </div>
     </br>
-    </br>
+
     
 
 <div class="flagNameDiv">

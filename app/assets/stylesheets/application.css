@@ -25,13 +25,13 @@ body {
 	height: 100%;
 	flex-flow: row wrap;
 	background-color: rgb(46, 42, 42);
-	color: whitesmoke;
+	color: black;
 }
 
 a {
-	font-size: 15px;
-	color: black;
-	padding: 5px;
+	font-size: 1vw;
+	color: blue;
+	padding: 20px;
 }
 
 a.currentpage {
@@ -49,40 +49,59 @@ header {
 h1 {
 	font-size: 7vh;
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 5px;
 	margin: 0;
 }
 
 h2 {
-	padding-left: 10px;
+	font-size: 2vw;
+	padding-left: 2%;
 	color: black;
 }
 
 h3 {
-	font-size: 14px;
+	font-size: 0.9vw;
 	text-align: center;
 	font-style: italic;
 }
 
 h5 {
 	margin: 0;
-	font-size: 12px;
+	font-size: 0.9vw;
 	text-align: center;
 }
 
 img.flag {
-	padding-left: 10px;
+	padding-left: 20px;
+}
+
+label {
+	padding-left: 20px;
+	font-size: 18px;
 }
 
 p {
-	font-size: 15px;
-	padding: 5px;
+	font-size: 1.1vw;
+	padding: 20px;
 }
 
 select {
 	width: 100px;
-	height: 70px;
+	appearance: none;
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	background: rgb(46, 42, 42);
+	flex: 1;
+	text-indent: 15px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+select::-ms-expand {
+	display: none;
 }
 
 textarea {
@@ -91,7 +110,7 @@ textarea {
 
 #mapid {
 	height: 60%;
-	width: 70%;
+	width: 65%;
 }
 
 .flagNameDiv {
@@ -100,8 +119,39 @@ textarea {
 	justify-content: flex-start;
 	align-items: flex-end;
 }
+
+.selectionBox {
+	margin-left: 20px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	width: 80%;
+	height: 2.5em;
+	line-height: 3;
+	background: rgb(46, 42, 42);
+	overflow: hidden;
+}
+
+.selectionBox::after {
+	content: "\25BC";
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: rgb(46, 42, 42);
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: 0.25s all ease;
+	-o-transition: 0.25 all ease;
+	transition: 0.25 all ease;
+}
+
+.selectionBox:hover::after {
+	color: blue;
+}
+
 .stateinfo {
-	width: 30%;
+	width: 35%;
 	height: 60%;
 	background-color: darkgrey;
 	overflow: auto;
