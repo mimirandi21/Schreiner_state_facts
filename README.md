@@ -2,6 +2,8 @@
 
 A fun facts app for learning more about Colorado and Minnesota, created using Leaflet.js.
 
+![screenshot](./public/StateFacts.png)
+
 ## Table of contents
 
 - [General info](#general-info)
@@ -21,7 +23,7 @@ Hello and welcome to State Facts! I created this application for the fine folks 
 
 ## Screenshots
 
-![screenshot]
+![screenshot](./public/StateFacts.png)
 
 ## Technologies
 
