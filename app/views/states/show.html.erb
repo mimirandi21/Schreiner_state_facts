@@ -20,7 +20,7 @@
     </div>
     <p><%= @state.description %></p>
     <h5>State Capitol: <%= @state.capitol_name %></h5>
-    <h5>State Population: <%= @state.population %></h5>
+    <h5>State Population: <%= number_with_delimiter(@state.population, :delimiter => ',') %></h5>
     </br>
     <h3>Fun Facts (click to reveal location on map)</h3>
     <% @facts.each do |fact| %>
@@ -34,7 +34,7 @@
 
 <script>
     if("<%= @state.name %>" == "Minnesota") {
-        mymap.setView([46.2773, -94.265469], 6, {animation: true})
+        mymap.setView([46.2773, -94.265469], 7, {animation: true})
     } else {
         mymap.setView([39, -105.484862], 7, {animation: true})
     }

@@ -39,10 +39,10 @@ a.currentpage {
 }
 
 header {
-	background-color: darkgrey;
+	background-color: rgb(46, 42, 42);
 	height: 10%;
 	width: 100%;
-	color: black;
+	color: darkgrey;
 	display: inline-block;
 }
 
@@ -109,7 +109,7 @@ textarea {
 }
 
 #mapid {
-	height: 60%;
+	height: 90%;
 	width: 65%;
 }
 
@@ -152,7 +152,7 @@ textarea {
 
 .stateinfo {
 	width: 35%;
-	height: 60%;
+	height: 90%;
 	background-color: darkgrey;
 	overflow: auto;
 }
