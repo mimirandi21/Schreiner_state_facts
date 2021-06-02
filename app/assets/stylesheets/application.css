@@ -29,8 +29,8 @@ body {
 }
 
 a {
-	font-size: 1vw;
-	color: blue;
+	font-size: 1.3em;
+	color: rgb(37, 80, 207);
 	padding: 20px;
 }
 
@@ -55,20 +55,20 @@ h1 {
 }
 
 h2 {
-	font-size: 2vw;
+	font-size: 2.2em;
 	padding-left: 2%;
 	color: black;
 }
 
 h3 {
-	font-size: 0.9vw;
+	font-size: 1.4em;
 	text-align: center;
 	font-style: italic;
 }
 
 h5 {
 	margin: 0;
-	font-size: 0.9vw;
+	font-size: 1.2em;
 	text-align: center;
 }
 
@@ -82,7 +82,7 @@ label {
 }
 
 p {
-	font-size: 1.1vw;
+	font-size: 2em;
 	padding: 20px;
 }
 
@@ -115,7 +115,7 @@ textarea {
 
 .flagNameDiv {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-end;
 }
@@ -153,6 +153,35 @@ textarea {
 .stateinfo {
 	width: 35%;
 	height: 90%;
-	background-color: darkgrey;
+	background-color: rgb(165, 174, 184);
 	overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	p {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	h3 {
+		font-size: 0.8em;
+	}
+	h5 {
+		font-size: 0.7em;
+	}
+	a {
+		font-size: 0.7em;
+	}
+	#mapid {
+		height: 65%;
+		width: 100%;
+	}
+	.stateinfo {
+		height: 35%;
+		width: 100%;
+	}
+	.leaflet-popup-content-wrapper {
+		width: 230px;
+	}
 }

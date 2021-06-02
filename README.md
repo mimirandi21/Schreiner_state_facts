@@ -1,9 +1,6 @@
 # State Facts
 
 A fun facts app for learning more about Colorado and Minnesota, created using Leaflet.js.
-![screenshot](./public/login.png)
-
-[Project Walkthrough Video](https://youtu.be/IdikCPiZDSc)
 
 ## Table of contents
 
@@ -18,32 +15,26 @@ A fun facts app for learning more about Colorado and Minnesota, created using Le
 
 ## General info
 
-Welcome to Middle Earth. Here you can find information about the Lord of the Rings and The Hobbit movies, all the editions released, and create your own hoard of these movies! Keep track of which versions you own, write reviews and see other user reviews. See fun facts about the movies. Can you compete with Smaug's hoard?
-Additionally, find out more about the actors and writers - fun facts and quotes from the people of Middle Earth.
-_This includes only the Peter Jackson movies._
+Hello and welcome to State Facts! I created this application for the fine folks at Sanborn while learning some really fascinating new technologies. I tried to incorporate all the required elements while facilitating my learning. I hope you enjoy my first attempt and please let me know if you have any questions or input!
+
+**You can also see this project live on [Heroku](https://schreiner-state-facts.herokuapp.com/)!**
 
 ## Screenshots
 
-![screenshot](./public/LOTRMovie.png)
+![screenshot]
 
 ## Technologies
 
-- Ruby on Rails
-- Omniauth - version 1.9.1
-- PostgreSQL - version 1.2.3
-- TSV - version 1.0.0
-- Bootstrap-SASS - version 3.4.1
-
-\***\*To see more about this process:\*\***
-
-[Project Blog Post](https://dev.to/meemeek/one-does-not-simply-build-a-rails-project-5522)
+- Ruby 2.6.6
+- Rails 6.1.3.2
+- Postgres
 
 THANKS FOR CHECKING OUT MY PROJECT!
 
 ## Setup
 
 Clone this repo to your local machine `git clone <this-repo-url>`
-run `cd lotr-db` to access
+run `cd Schreiner_state_facts` to access
 run `bundle install` to install required dependencies
 run `rails db:migrate` to create the database tables
 run `rails db:seed` to integrate information from tsv seed files
@@ -51,22 +42,18 @@ run `rails s` in your terminal and follow link to the correct port
 
 ## Features
 
-- Implementation of log in through Google OAuth.
-- Ability to see other user reviews and ratings as well as have private comments.
-- Full CRUD capabilities for the users to maintain a full database of their own movies.
-
-To-do list:
-
--
+- Layered map using Leaflet.js and geoJSON information.
+- Fun fact links to detailed markers with geolocational positioning.
+- Somewhat responsive design, including design and font sizing for mobile.
 
 ## Status
 
-Project is complete.
+Additional responsive designing needed.
 
 ## Inspiration
 
-Project inspired by Peter Jackson's amazing vision of J.R.R Tolkein's work and the hard work that was put into bringing it to life.
+Project inspired by code challenge from Sanborn and my desire to learn new things.
 
 ## Contact
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/mimirandi21/lotr-db.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mimirandi21/Schreiner_state_facts.
